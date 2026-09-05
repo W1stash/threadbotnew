@@ -8,7 +8,7 @@ async def calculate(update, context):
 
     try:
         yen = float(text.replace(",", "."))
-        rub = int((yen * 0.62) + 800) // 100 * 100  # целое число
+        rub = int((yen * 0.67) + 1488) // 100 * 100  # целое число
 
         await update.message.reply_text(str(rub))
 
